@@ -100,8 +100,7 @@ function kattene_func( $args, $content ) {
   for( $i=0 ; $i<$cnt ; $i++ ){
      if(array_key_exists('afi_url', $sites[$i]))
      {
-        $afi_url = $sites[$i]["afi_url"];
-        $url = $afi_url . urlencode($sites[$i]["url"]);
+        $url = $sites[$i]["afi_url"] . urlencode($sites[$i]["url"]);
      }else{
         $url = $sites[$i]["url"];
      }
